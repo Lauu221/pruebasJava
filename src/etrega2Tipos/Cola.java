@@ -4,7 +4,7 @@ import java.util.LinkedList;
 
 
 public class Cola<E> extends AgregadoLineal<E> {
-	private LinkedList<E> elementos;
+	protected LinkedList<E> elementos;
 	
 	protected Cola() {
         this.elementos = new LinkedList<>();

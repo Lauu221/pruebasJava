@@ -1,11 +1,12 @@
 
 package etrega2Tipos;
 import java.util.LinkedList;
+import java.util.List;
 
 
 
 public class Pila<E> extends AgregadoLineal<E>  {
-	private LinkedList<E> elementos;
+	protected LinkedList<E> elementos;
 	
 	public Pila() {
 		this.elementos = new LinkedList<>();
@@ -46,11 +47,10 @@ public class Pila<E> extends AgregadoLineal<E>  {
 	public E remove() {
 		return null;
 	}
-
-
-	
-		
-		
+	public List<E> getElementos() {
+	    return elementos;
 	}
+	
+}
 	
 

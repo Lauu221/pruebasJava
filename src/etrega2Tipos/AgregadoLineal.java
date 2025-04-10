@@ -1,5 +1,6 @@
 package etrega2Tipos;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public abstract class AgregadoLineal<E> {
@@ -38,6 +39,11 @@ public abstract class AgregadoLineal<E> {
         List<E>removedElements = new ArrayList<>(elementos);
 		elementos.clear();
 		return removedElements; 
+	}
+
+	public <T> Iterator<T> iterator() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 

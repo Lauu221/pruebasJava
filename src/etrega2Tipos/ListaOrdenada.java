@@ -3,8 +3,9 @@ package etrega2Tipos;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Comparator;
+import java.util.Iterator;
 
-public class ListaOrdenada<E> extends AgregadoLineal<E>{
+public class ListaOrdenada<E> extends AgregadoLineal<E> implements Iterable<E>{
 	private final Comparator<E> comparator;
 	
 	public ListaOrdenada(Comparator<E> comparator) {
@@ -36,8 +37,12 @@ public class ListaOrdenada<E> extends AgregadoLineal<E>{
 	public E remove() {
 		return isEmpty() ? null : elementos.remove(0);
 	}
+	 @Override
+	 public Iterator<E> iterator() {
+	        return elementos.iterator();
 
 }
+	 }
 	
 
 
